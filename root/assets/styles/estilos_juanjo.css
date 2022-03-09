@@ -21,7 +21,19 @@ color: yellow;
     display: inline-block;
 }
 #footer_blog{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
     margin: 2rem;
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
+
+    text-size-adjust: 1.3rem;
 
 }
 .ilustracion figcaption {
@@ -34,6 +46,7 @@ nav>ul>li {
 }
 nav>ul>li>a{
     text-decoration: none;
+    color: #fff;
 }
 
 /* grid */
@@ -69,4 +82,56 @@ section>aside {
 
 section>footer {
     grid-column: span 12;
+}
+section>nav {
+    font-size: 1.3rem;
+}
+nav>ul>li>a:hover{
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+/* seleccional el <ul> que es hijo de <nav> */
+
+nav>ul{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    border-bottom: 1px solid #fff;
+
+    padding-bottom: 0.5rem;
+
+}
+article>header>hgroup{
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+article>header>hgroup>h2{
+    display: flex;
+
+    align-items: center;
+}
+
+article>header>hgroup>h2>img{
+    margin-right: 1rem;
+}
+
+#footer_blog div:nth-last-of-type(2){
+    text-size-adjust: 0.9rem;
+}
+
+aside>h2{
+    align-items: center;
+    size: 1.3rem;
+}
+
+aside>div:nth-last-of-type(even){
+    background-color: rgb(44, 43, 43);
 }
