@@ -35,3 +35,38 @@ nav>ul>li {
 nav>ul>li>a{
     text-decoration: none;
 }
+
+/* grid */
+section {
+
+    /* despliegate como grid */
+    display: grid;
+
+    /* crea 12 columnas cas una de una fraccion usando la funcion repeat */
+    grid-template-columns: repeat(12, 1fr);
+
+    /* deja que las filas (renglones) ocupen el alto que necesitan */
+    grid-auto-rows: auto;
+
+    /* añade un espacio entre los elementos del grid de 3rem */
+    gap: 3rem;
+}
+/* termina grid */
+
+/* apunta solo a los header que son hijos directos de section */
+section>header {
+    /* esta seccion se extendera 12 columnas */
+    grid-column: span 12;
+}
+
+section>main {
+    grid-column: span 8;
+}
+
+section>aside {
+    grid-column: span 4;
+}
+
+section>footer {
+    grid-column: span 12;
+}
